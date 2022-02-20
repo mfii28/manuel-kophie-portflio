@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+            
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!--Aos Css-->
+        <link rel="stylesheet" href="css/aos.css">
+
+        <!--Icons CSS-->
+        <link rel="stylesheet" href="/css/icofont.css">
+        
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="/css/style.css">
+    
+    
+    </head>
+    <body>
+  
+        <div class="wrapper">
+            <header>
+                          
+               <nav class="navbar navbar-light">
+                   <div class="logo">
+                          <a class="navbar-brand" href="#">Manuel</a>  
+                   </div>
+            <nav class="navbar navbar-expand navbar-light  t">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">My life <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My goals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">photos</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-success" href="#">keep in touch</a>
+                    </li>
+                </ul>
+            </nav>
+               </nav>
+            
+               
+            </header>
+
+            <div class="container">
+                <div class="profile">
+                    <div class="profile-overlay"></div>
+                    <img src="/pic.jpg" alt="">
+                </div>
+                <div class="profile-text">
+                    <h6 class="student">student</h6>
+                    <h1 class="name">Emmanuel</h1>
+                    <p class="small-intro">Hey guuys , the name mis Emmanuel Tetteh - i'm a student in computer science in koforidua technical university</p>
+                </div>
+            </div>
+        </div>
+
+
+
+       <script src="/main/Jquery.js"></script>
+       <script src="/main/bootstrap.min.js"></script>
+       <script src="/main/anime.min.js"></script>
+       <script src="/lettering.js"></script>
+       <script src="main/aos.js"></script>
+       <script src="/main/main.js"></script>
+  <script>
+      $(document).ready(function(){
+          $(".name,.small-intro,.student").lettering();
+      
+
+      anime({
+          targets: ".profile .profile-overlay",
+          translateX: 1500,
+          delay: 900,
+          duration: 1200,
+          easing: "easeInSine"
+      
+      
+        })
+
+        
+      anime({
+          targets: ".profile img",
+          opacity: 1,
+          delay: 1500,
+          duration: 1500,
+          easing: "easeInSine"
+      
+      
+        })
+        
+      anime({
+          targets: ".student span",
+          opacity: 1,
+          duration: 1500,
+          easing: "easeInSine",
+        delay: anime.stagger(100,{start: 3000})
+      
+        })
+        anime({
+          targets: ".name span",
+          opacity: 1,
+          duration: 1500,
+          easing: "easeInSine",
+        delay: anime.stagger(100,{start: 4500})
+      
+        })
+        anime({
+          targets: ".name .char2,.name .char4,.name .char6,.name .char8",
+          keyframes:[
+                {translateY:100,duration: 1500,}
+          ],
+          easing: "easeInOutExpo",
+          delay: 8000
+        })
+        anime({
+          targets: ".name .char5,.name .char7",
+          keyframes:[
+                {translateY:-100,duration: 1500,}
+          ],
+          easing: "easeInOutExpo",
+          delay: 8000
+        })
+        })
+  </script>
+    </body>
+</html>

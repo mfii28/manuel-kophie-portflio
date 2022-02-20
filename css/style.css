@@ -1,0 +1,90 @@
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+a{
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ 
+.navbar .navbar-brand{
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link  {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: capitalize;
+    font-size: 17px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar .navbar-brand:hover {
+    color: #fff999;
+}
+
+.profile{
+    float: right;
+    position: relative;
+    margin: 50px 180px 0;
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
+}
+
+img{
+    width: 40%;
+    float: right;
+     opacity: 0;
+}
+
+.profile-text {
+    position: absolute;
+    color: #fff;
+    margin-top: 200px;
+}
+
+.profile-text h6{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 16px;
+}
+
+.profile-text h1{
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+.profile-text p{
+    max-width: 500px;
+    font-size: 16px;
+    margin-top: 140px;
+}
+
+.profile-text .name span{
+    margin-right: 80px;
+    display: inline-block;
+}
+
+.profile-text .name span:last-child{
+    margin-right: 0px;
+}
+
+
+.profile .profile-overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -90%;
+    width: 50%;
+    height: 100%;
+    background: #525252;
+    z-index: 99;
+}
+
+
+
+.name span,.student span{
+    opacity: 0;
+}
+
